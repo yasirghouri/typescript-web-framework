@@ -9,6 +9,7 @@
     "start:db": "json-server --watch db.json --port 3001",
     "start:parcel": "parcel index.html",
     "build": "tsc",
+    "init": "tsc --init",
     "start": "node dist/index.js"
   }
 }
