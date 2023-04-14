@@ -15,9 +15,17 @@ export class UserForm {
     this.model.setRandomAge();
   };
 
+  onSetNameClick = (): void => {
+    const input = this.parent.querySelector("input");
+    if (input?.value) {
+      this.model.set({ name: input?.value });
+    }
+  };
+
   eventsMap(): { [key: string]: () => void } {
     return {
       "click:.set-age": this.onSetAgeClick,
+      "click:.set-name": this.onSetNameClick,
     };
   }
 
@@ -40,7 +48,7 @@ export class UserForm {
             <div>User name: ${this.model.get("name")}</div>
             <div>User name: ${this.model.get("age")}</div>
             <input />
-            <button>Click Me</button>
+            <button class="set-name">Change name</button>
             <button class="set-age">Set random age</button>
         </div>
         `;
