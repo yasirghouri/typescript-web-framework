@@ -1,4 +1,4 @@
-import axios, { AxiosPromise, AxiosResponse } from "axios";
+import { AxiosPromise, AxiosResponse } from "axios";
 
 interface ModelAttributes<T> {
   get<K extends keyof T>(key: K): T[K];
