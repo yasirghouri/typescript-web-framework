@@ -1,7 +1,7 @@
-import { Attributes } from "./Attributes";
 import { Model } from "./Model";
-import { Eventing } from "./Eventing";
+import { Attributes } from "./Attributes";
 import { ApiSync } from "./ApiSync";
+import { Eventing } from "./Eventing";
 import { Collection } from "./Collection";
 
 export interface UserProps {
